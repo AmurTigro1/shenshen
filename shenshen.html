@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>To my pretty baby!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="images/icon.png" type="image/png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: "Just Me Again Down Here", cursive;
+      background-color: #fff5f8;
+      /* overflow: hidden; */
+    }
+
+    .balloon, .flower {
+      position: absolute;
+      z-index: 0;
+      opacity: 0.7;
+    }
+
+    .balloon {
+      animation: floatUp 10s linear infinite;
+    }
+
+    @keyframes floatUp {
+      0% {
+        transform: translateY(100vh) scale(0.8);
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-100vh) scale(1.2);
+        opacity: 0;
+      }
+    }
+
+    .flower {
+      animation: floatSide 6s ease-in-out infinite alternate;
+    }
+
+    @keyframes floatSide {
+      0% {
+        transform: translateX(0) rotate(0deg);
+      }
+      100% {
+        transform: translateX(15px) rotate(10deg);
+      }
+    }
+  </style>
+</head>
+<body class="relative flex items-center justify-center min-h-screen px-4 py-6">
+
+  <img src="https://cdn-icons-png.freepik.com/512/2926/2926723.png?ga=GA1.1.1609491871.1738904251" class="balloon" style="left: 50%; width: 100px; animation-delay: 0s;">
+  <img src="https://cdn-icons-png.freepik.com/512/2926/2926723.png?ga=GA1.1.1609491871.1738904251" class="balloon" style="left: 70%; width: 70px; animation-delay: 2s;">
+  <img src="https://cdn-icons-png.freepik.com/512/2926/2926723.png?ga=GA1.1.1609491871.1738904251" class="balloon" style="left: 70%; width: 70px; animation-delay: 1s;">
+  <img src="https://cdn-icons-png.freepik.com/512/2926/2926723.png?ga=GA1.1.1609491871.1738904251" class="balloon" style="left: 70%; width: 70px; animation-delay: 1s;">
+  <img src="https://cdn-icons-png.freepik.com/512/2926/2926723.png?ga=GA1.1.1609491871.1738904251" class="balloon" style="left: 70%; width: 70px; animation-delay: 1s;">
+  <img src="https://cdn-icons-png.freepik.com/512/2926/2926723.png?ga=GA1.1.1609491871.1738904251" class="balloon" style="left: 40%; width: 50px; animation-delay: 3s;">
+
+  <img src="https://cdn-icons-png.freepik.com/512/185/185755.png?ga=GA1.1.1609491871.1738904251" class="flower" style="top: 30%; left: 1%; width: 100px;">
+  <img src="https://cdn-icons-png.freepik.com/512/185/185755.png?ga=GA1.1.1609491871.1738904251" class="flower" style="top: 65%; left: 70%; width: 50px;">
+  <img src="https://cdn-icons-png.freepik.com/512/185/185755.png?ga=GA1.1.1609491871.1738904251" class="flower" style="top: 60%; left: 50%; width: 100px;">
+
+  <div class="relative z-10 bg- rounded-xl p-5 max-w-sm w-full text-center">
+    <h1 class="text-4xl mb-10 text-pink-500">To my dear Shenshen <span><3</span></h1>
+
+    <img src="images/cute.png" class="flex justify-center items-center w-48 h-48 ml-20 mt-5">
+    <div class="relative">
+      <img src="images/spongebob.gif"
+           class="w-32 h-32 absolute top-10 right-20">
+
+           <img src="https://i.pinimg.com/originals/bb/5a/f6/bb5af6635fb86e5a76b9c54f63d06a37.gif"
+           class="w-32 h-32 absolute top-1/2 left-2">
+
+      <img src="images/2.jpg" alt="Happy Couple"
+           class="mx-auto rounded-xl shadow w-full mb-4">
+    </div>
+    <h2 class="text-3xl mb-4 text-pink-500">Happy Girlfriend's Day!</h2>
+    <p class="text-2xl text-gray-600 leading-relaxed">You're my sunshine, my laughter, and my favorite person. Thank you for being amazing every single day. 💕<img src="https://i.pinimg.com/originals/dc/dd/45/dcdd45bc02f89241babe4ab61ce69f01.gif" class="flex justify-center items-center w-54 h-54 mt-5 rounded rounded-2xl"></p>
+  </div>
+  <audio id="audio" autoplay src="audio.mp3" autoplay loop></audio>
+</body>
+</html>
