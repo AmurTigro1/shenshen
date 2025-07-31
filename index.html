@@ -80,8 +80,41 @@
            class="mx-auto rounded-xl shadow w-full mb-4">
     </div>
     <h2 class="text-3xl mb-4 text-pink-500">Happy Girlfriend's Day!</h2>
-    <p class="text-2xl text-gray-600 leading-relaxed">You're my sunshine, my laughter, and my favorite person. Thank you for being amazing every single day. 💕<img src="https://i.pinimg.com/originals/dc/dd/45/dcdd45bc02f89241babe4ab61ce69f01.gif" class="flex justify-center items-center w-54 h-54 mt-5 rounded rounded-2xl"></p>
+    <p class="text-2xl text-gray-600 leading-relaxed">Hello, my pretty princess. Happy Girlfriend's Day!
+      How’s my pookie wookie dookie cookie doing today? 💕
+      I hope this short message puts a big smile on your beautiful face and brightens your day.
+      This message is just a reminder that you have me all the time, and I’m here to cheer you up.
+      
+      I saw this TikTok post:
+      "Remember that tough times don't last, tough people do. Keep moving forward, because every storm passes, and brighter days follow."
+      
+      So don’t be too hard on yourself, okay? You got this! *kisses* 💕<img src="https://i.pinimg.com/originals/dc/dd/45/dcdd45bc02f89241babe4ab61ce69f01.gif" class="flex justify-center items-center w-54 h-54 mt-5 rounded rounded-2xl"></p>
+    <img src="https://i.pinimg.com/1200x/11/2e/58/112e58cc97ed2f72a9197b63ff304cf4.jpg" class="flex justify-center items-center w-54 h-54 mt-20 rounded rounded-2xl">
+    <p class="text-2xl text-gray-600 leading-relaxed">I love you always, in all ways!</p>
   </div>
-  <audio id="audio" autoplay src="audio.mp3" autoplay loop></audio>
+
+  <div id="startOverlay" onclick="start()" class="fixed inset-0 bg-white z-50 flex items-center justify-center">
+
+  <div class="absolute mb-80 flex flex-col items-center text-pink-500 font-semibold text-2xl">
+    <p>Tap here, princess! 💖</p>
+    <img src="https://cdn-icons-png.freepik.com/512/13451/13451373.png?ga=GA1.1.1609491871.1738904251"
+         alt="Arrow Down" class="w-8 h-8 mt-5 animate-bounce">
+  </div>
+
+  <img src="https://i.pinimg.com/736x/d8/be/fc/d8befc63040cca1c1a51511f9cc4805c.jpg" alt="Tap to Start"
+       class="w-48 h-48 object-contain cursor-pointer">
+</div>  
+
+<audio id="bgAudio" src="audio.mp3" loop></audio>
+
+<script>
+  function start() {
+    document.getElementById("startOverlay").style.display = "none";
+    document.getElementById("bgAudio").play().catch((err) => {
+      console.log("Audio play failed:", err);
+    });
+  }
+</script>
+
 </body>
 </html>
